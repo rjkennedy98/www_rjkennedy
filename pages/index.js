@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 const Home = () => {
   return (
     <p>
-      Hello From my next.js app!
+	  Teja says hello!
     </p>
   )
 }
