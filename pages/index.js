@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 const Home = () => {
   return (
     <p>
-	  Teja says hello!
+	  Richard says hello!
     </p>
   )
 }
