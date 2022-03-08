@@ -6,15 +6,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:css": "postcss styles/global.css -o styles/main.css",
+    "build:watch": "postcss styles/global.css -o styles/main.css --watch",
+    "prod:build": "NODE_ENV=production yarn run build:css && yarn run build",
+    "pretty": "npx prettier --write ."
   },
   "dependencies": {
+    "autoprefixer": "^10.4.2",
     "next": "12.1.0",
+    "postcss": "^8.4.7",
+    "postcss-cli": "^9.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
     "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0"
+    "eslint-config-next": "12.1.0",
+    "prettier": "2.5.1"
   }
 }
